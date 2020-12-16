@@ -14,6 +14,8 @@ Haciendo uso del framework de desarrollo para python FastAPI
 ## 🛠️🛠️🛠️
 
 _✅ Python Version 3.8.5_
+
 _✅ DB PostgreSQL 13_
+
 _✅ [FastAPI](FastAPIfastapi.tiangolo.com)_
 
