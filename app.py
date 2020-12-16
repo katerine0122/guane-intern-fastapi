@@ -1,5 +1,6 @@
 from typing import Optional
 import databases, sqlalchemy, datetime, uuid
+from sqlalchemy import ForeignKey
 
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
@@ -18,6 +19,7 @@ dogs = sqlalchemy.Table(
     sqlalchemy.Column("picture", sqlalchemy.String),
     sqlalchemy.Column("create_date", sqlalchemy.String),
     sqlalchemy.Column("is_adopted", sqlalchemy.Boolean)
+
 )
 
 engine = sqlalchemy.create_engine(
@@ -25,11 +27,11 @@ engine = sqlalchemy.create_engine(
 )
 metadata.create_all(engine)
 
-
+#BaseModel DOG
 class DogList(BaseModel):
     id :str
     name: str
-    picture: str
+    picture: str = Field(..., base="https://dog.ceo/api/breeds/image/random")
     create_date: str
     is_adopted: bool
 
@@ -128,4 +130,3 @@ async def delete_dog_by_name(dog:DogDelete):
         "status" : True,
         "message": f"The dog named <<{dog.name}>> has been eliminated"
     }
-
