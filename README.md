@@ -3,12 +3,13 @@
 Haciendo uso del framework de desarrollo para python FastAPI
 
 📌 Requerimientos
-install SQLAlchemy
-install database
-install DateTime
-install typing
-install uuid
-install pydantic
+
+* install SQLAlchemy
+* install database
+* install DateTime
+* install typing
+* install uuid
+* install pydantic
 
 🛠️🛠️🛠️
 ✅ Python Version 3.8.5
