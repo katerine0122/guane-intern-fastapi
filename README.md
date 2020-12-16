@@ -2,7 +2,7 @@
 
 Haciendo uso del framework de desarrollo para python FastAPI
 
-📌 Requerimientos
+##📌 Requerimientos
 
 * install SQLAlchemy
 * install database
@@ -11,8 +11,8 @@ Haciendo uso del framework de desarrollo para python FastAPI
 * install uuid
 * install pydantic
 
-🛠️🛠️🛠️
-✅ Python Version 3.8.5
-✅ DB PostgreSQL 13
-✅ [FastAPI](FastAPIfastapi.tiangolo.com)
+##🛠️🛠️🛠️
+_✅ Python Version 3.8.5_
+_✅ DB PostgreSQL 13_
+_✅ [FastAPI](FastAPIfastapi.tiangolo.com)_
 
